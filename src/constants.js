@@ -10,6 +10,7 @@ import temp_passes from './data/temp_passes.json'
 import un_secretariat_units_bodies from './data/un_secretariat_units_bodies.json'
 import un_secretariat_units_bodies_overflow from './data/un_secretariat_units_bodies_overflow.json'
 import parties from './data/parties.json'
+import strains from './data/stock.json'
 
 export const keys = [
   'parties',

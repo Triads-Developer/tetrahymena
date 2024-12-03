@@ -7,38 +7,16 @@ import * as Constants from './constants.js'
 
 function ResultsGrid({ results }) {
   const columns = [
-    { field: 'id', headerName: 'ID', minWidth: 10 },
-    { field: 'Nominator', headerName: 'Nominator', flex: 1, minWidth: 125 },
+    { field: 'id', headerName: 'RRID', minWidth: 10 },
     { field: 'Name', headerName: 'Name', flex: 1, minWidth: 125 },
-    { field: 'Functional title', headerName: 'Functional Title', flex: 1, minWidth: 125 },
+    { field: 'AKA', headerName: 'AKA', flex: 1, minWidth: 125 },
+    { field: 'Species', headerName: 'Species', flex: 1, minWidth: 125 },
+    { field: 'Description', headerName: 'Description', flex: 1, minWidth: 125 },
     { field: 'Department', headerName: 'Department', flex: 1, minWidth: 125 },
-    { field: 'Organization', headerName: 'Organization', flex: 1, minWidth: 125 },
-    {
-      field: 'Relation',
-      headerName: 'Relation',
-      minWidth: 125,
-      flex: 1,
-      valueGetter: (value, row) => {
-        if (Constants.relationOptions.indexOf(row.Relation) === -1) {
-          return 'Other (please specify)'
-        } else {
-          return row.Relation
-        }
-      }
-    },
-    {
-      field: 'Specify',
-      headerName: 'Specify',
-      minWidth: 125,
-      flex: 1,
-      valueGetter: (value, row) => {
-        if (Constants.relationOptions.indexOf(row.Relation) === -1) {
-          return row.Relation
-        } else {
-          return ''
-        }
-      }
-    }
+    { field: 'Gene of interest', headerName: 'Gene of Interest', flex: 1, minWidth: 125 },
+    { field: 'Origin', headerName: 'Origin', flex: 1, minWidth: 125 },
+    { field: 'Publications', headerName: 'Publications', flex: 1, minWidth: 125 },
+    { field: 'Comments', headerName: 'Comments', flex: 1, minWidth: 125 }
   ]
 
   function CustomToolbar() {

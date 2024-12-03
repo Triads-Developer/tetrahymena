@@ -29,7 +29,7 @@ export default function Search(data, nominator, relation, searchTerms) {
   }
 
   const options = {
-    keys: ['Nominator', 'Functional title', 'Department', 'Organization', 'Name'],
+    keys: ['Name', 'AKA', 'Species'],
     threshold: 0.2
   }
 
