@@ -35,7 +35,7 @@ function ResultsGrid({ results }) {
             rows={results}
             columns={columns}
             initialState={{
-              pagination: { paginationModel: { page: 0, pageSize: 10 } }
+              pagination: { paginationModel: { page: 0, pageSize: 100 } }
             }}
             columnVisibilityModel={{
               id: false
